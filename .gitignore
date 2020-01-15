@@ -1,11 +1,44 @@
-## User settings
+# This application
+resources/inputs/
+resources/puzzles/*
+!resources/puzzles/1
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+pip-log.txt
+pip-delete-this-directory.txt
+instance/
+.webassets-cache
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# User settings
 xcuserdata/
 
-## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+# compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
 *.xccheckout
 
-## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+# compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
 build/
 DerivedData/
 *.moved-aside
@@ -18,7 +51,7 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
-## Gcc Patch
+# Gcc Patch
 /*.gcno
 
 # Swap
