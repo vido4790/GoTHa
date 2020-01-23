@@ -1,3 +1,5 @@
+.DS_Store
+
 # This application
 resources/inputs/
 resources/puzzles/*

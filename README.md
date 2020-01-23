@@ -40,9 +40,9 @@ The steps to do so can be found in the [Setup](#setup) section.
 ```
 $ git clone https://github.com/vido4790/GoTHa.git && cd GoTHa
 ```
-2. Create a virtual environment
+2. Create a virtual environment (needs virtualenv package to be installed)
 ```
-$ virtualenv venv && source venv/bin/activate
+$ virtualenv -p /usr/bin/python2.7 venv && source venv/bin/activate
 ```
 3. Install requirements
 ```
