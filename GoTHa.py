@@ -127,7 +127,7 @@ def saltDecryptor(inLevel, inPrevAnswer, encDir):
 
     print "Decrypting salt for level " + str(inLevel)
     salt    = base64.urlsafe_b64decode(str(inputDict[str(inLevel)]['salt']))
-    pepper  = Solver.decryptSalt(salt, None if inLevel is 1 else inPrevAnswer)
+    pepper  = Solver.decryptSalt(salt, None if inLevel is 1 else inPrevAnswer) #hmmmmmmm......
 
     print "Pepper found: " + pepper
 

@@ -1,7 +1,7 @@
 .DS_Store
 
 # This application
-resources/inputs/
+resources/inputs/*
 resources/puzzles/*
 !resources/puzzles/1
 

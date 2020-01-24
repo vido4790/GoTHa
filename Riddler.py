@@ -28,7 +28,7 @@ import unittest, random
 # f(n), a(n), h?nt(n), k(n) -> ef(n), s(n), h(n), k(n+1)
 
 def _sanitizeStr(inStr):
-    return re.sub('[^A-Za-z0-9]+', '', inStr)
+    return re.sub('[^a-z0-9_]+', '', inStr.lower()) # using underscore as string separator
 
 def _sanitizeEmpty(inKey):
     return '0' if inKey is None else inKey
