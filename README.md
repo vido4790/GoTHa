@@ -87,6 +87,13 @@ $ python GoTHa.py create
 8. The `.gitignore` file is programmed to ignore the contents of `resources/inputs` to prevent from answers being inadvertently revealed. Please be careful as to not push the unencrypted files onto origin.
 9. When the encrypted files are ready, please commit and push them to the server.
 
+## FAQ
+Q. Can I open the envelopes now?
+A. NO. 
+
+Q. When can I open the envelopes?
+A. When you solve the corresponding puzzle. Patience.
+
 
 ## Credits
-Gota group is responsible for the gifts. The code was written mostly by [Virag Doshi](https://gist.github.com/vido4790). The puzzles were created mostly by [Moumita Dey](https://github.com/mdey6).
+Gota group is responsible for the gifts. The code was written mostly by [Virag Doshi](https://gist.github.com/vido4790). The puzzles were created by [Moumita Dey](https://github.com/mdey6) and Virag Doshi.
