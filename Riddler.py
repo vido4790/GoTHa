@@ -15,6 +15,7 @@ from Crypto import *
 from Tar import *
 import Printer
 import unittest, random
+import shutil
 
 
 # The answer to nth puzzle:                 a(n)
@@ -119,8 +120,10 @@ class Solver(object):
         Printer.verbosePrinter('dec ' + self.encFile + ' -> ' + self.tarFile + ' with key ' + \
                                 base64.urlsafe_b64encode(_getKey(inAns)))
         CipherSuite(_getKey(inAns)).decryptFile(self.encFile, self.tarFile)
-        Printer.verbosePrinter('untar ' + self.tarFile + ' -> ' + self.outDir)
-        Tar.untar(self.tarFile, self.outDir)
+        Printer.verbosePrinter('untar ' + self.tarFile + ' -> ' + Solver.outputDir)
+        if os.path.exists(self.outDir):
+            shutil.rmtree(self.outDir)
+        Tar.untar(self.tarFile, Solver.outputDir)
         os.remove(self.tarFile)
         
 
