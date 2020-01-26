@@ -53,7 +53,19 @@ $ pip install -r requirements.txt
 $ python GoTHa.py
 ```
 
+
+## FAQ
+Q. Can I open the envelopes now?   
+A. NO. 
+
+
+Q. When can I open the envelopes?   
+A. When you solve the corresponding puzzle. Patience.
+
+
 ## How to Create Puzzles
+**Note**: This section is only for creating the puzzles, not solving them.
+
 To create the puzzles please follow the following steps:
 1. Decide on the number of levels.
 2. Create n directories in `resources/inputs` for the n levels. Name each directory with the level number, starting with 1.
@@ -79,7 +91,7 @@ To create the puzzles please follow the following steps:
 ```
 4. Fill in the answers and the pepper for each of the level.
 5. Place the puzzles for each level into the corresponding directory as created in step 2.
-6. Execute the following command:
+6. Execute the following command (**Note**: Running this command may cause the existing puzzles to be overwritten):
 ```
 $ python GoTHa.py create
 ```
@@ -87,13 +99,6 @@ $ python GoTHa.py create
 8. The `.gitignore` file is programmed to ignore the contents of `resources/inputs` to prevent from answers being inadvertently revealed. Please be careful as to not push the unencrypted files onto origin.
 9. When the encrypted files are ready, please commit and push them to the server.
 
-## FAQ
-Q. Can I open the envelopes now?
-A. NO. 
-
-Q. When can I open the envelopes?
-A. When you solve the corresponding puzzle. Patience.
-
 
 ## Credits
-Gota group is responsible for the gifts. The code was written mostly by [Virag Doshi](https://gist.github.com/vido4790). The puzzles were created by [Moumita Dey](https://github.com/mdey6) and Virag Doshi.
+Gota group is responsible for the gifts. The code and the puzzles were created by [Virag Doshi](https://gist.github.com/vido4790) and [Moumita Dey](https://github.com/mdey6).
